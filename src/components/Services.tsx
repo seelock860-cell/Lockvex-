@@ -40,7 +40,13 @@ export default function Services() {
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
-                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    // Fallback to public asset if needed
+                    const target = e.currentTarget;
+                    if (!target.src.includes('/assets/images/lockvex_hero_mockup')) {
+                      target.src = '/assets/images/lockvex_hero_mockup_1793721008452.jpg';
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent" />
                 

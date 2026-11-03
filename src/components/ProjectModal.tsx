@@ -121,7 +121,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.src.includes('/assets/images/lockvex_hero_mockup')) {
+                        target.src = '/assets/images/lockvex_hero_mockup_1793721008452.jpg';
+                      }
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
                   

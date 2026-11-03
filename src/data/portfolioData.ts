@@ -1,3 +1,11 @@
+import heroMockup from '../assets/images/lockvex_hero_mockup_1793721008452.jpg';
+import ecommerceMockup from '../assets/images/service_ecommerce_mockup_1793721010104.jpg';
+import restaurantMockup from '../assets/images/service_restaurant_mockup_1793721010092.jpg';
+import realestateMockup from '../assets/images/service_realestate_mockup_1793721010614.jpg';
+import schoolMockup from '../assets/images/service_school_portfolio_1793721011206.jpg';
+import hotelMockup from '../assets/images/service_hotel_mockup_1793724221763.jpg';
+import portfolioMockup from '../assets/images/service_portfolio_agency_1793724222293.jpg';
+
 export interface ServiceItem {
   id: string;
   title: string;
@@ -33,7 +41,7 @@ export const SERVICES: ServiceItem[] = [
     id: "business",
     title: "Business Websites",
     shortDesc: "High-impact corporate web solutions crafted to establish authority, generate qualified inquiries, and project corporate excellence.",
-    image: "/assets/images/lockvex_hero_mockup_1793721008452.jpg",
+    image: heroMockup,
     features: ["Company Profile & Service Tiers", "Direct WhatsApp Lead Funnels", "Fast 1-Second Page Load Speed"],
     idealFor: "Consultancies, Agencies, Law Firms & Corporate Brands"
   },
@@ -41,7 +49,7 @@ export const SERVICES: ServiceItem[] = [
     id: "ecommerce",
     title: "E-commerce Websites",
     shortDesc: "Conversion-optimized digital storefronts engineered for smooth checkout, showcase galleries, and automated order handling.",
-    image: "/assets/images/service_ecommerce_mockup_1793721010104.jpg",
+    image: ecommerceMockup,
     features: ["Product Catalogs & Collections", "Cart & Instant WhatsApp Checkout", "Inventory & Order Tracking Flow"],
     idealFor: "Retailers, Fashion Boutiques, Electronics & Beauty Brands"
   },
@@ -49,7 +57,7 @@ export const SERVICES: ServiceItem[] = [
     id: "restaurant",
     title: "Restaurant Websites",
     shortDesc: "Mouth-watering interactive digital dining experiences with online food menus, reservations, and location directions.",
-    image: "/assets/images/service_restaurant_mockup_1793721010092.jpg",
+    image: restaurantMockup,
     features: ["Interactive Digital Menus with Pricing", "Table Reservation via WhatsApp", "Location, Hours & Delivery Ordering"],
     idealFor: "Bistros, Fine Dining, Cafes & Food Chains"
   },
@@ -57,7 +65,7 @@ export const SERVICES: ServiceItem[] = [
     id: "realestate",
     title: "Real Estate Websites",
     shortDesc: "Modern architectural property portfolios with photo galleries, floor plans, amenity highlights, and tour booking.",
-    image: "/assets/images/service_realestate_mockup_1793721010614.jpg",
+    image: realestateMockup,
     features: ["Property Listings & Filter System", "High-Resolution Image Galleries", "Direct Agent Inquiry on WhatsApp"],
     idealFor: "Realtors, Property Developers & Estate Agents"
   },
@@ -65,7 +73,7 @@ export const SERVICES: ServiceItem[] = [
     id: "school",
     title: "School Websites",
     shortDesc: "Structured and credible educational portals displaying academic curricula, admission details, announcements, and student life.",
-    image: "/assets/images/service_school_portfolio_1793721011206.jpg",
+    image: schoolMockup,
     features: ["Admissions & Tuition Guides", "Course Catalog & Staff Directory", "Parent Inquiries & Notice Board"],
     idealFor: "Colleges, Academies, Private Schools & Training Institutes"
   },
@@ -73,7 +81,7 @@ export const SERVICES: ServiceItem[] = [
     id: "hotel",
     title: "Hotel Websites",
     shortDesc: "Luxury hospitality web experiences highlighting room suites, resort amenities, dining, and instant guest reservation booking.",
-    image: "/assets/images/service_restaurant_mockup_1793721010092.jpg",
+    image: hotelMockup,
     features: ["Room Showcase & Virtual Photo Tour", "Booking & WhatsApp Check-in Inquiries", "Guest Amenities & Spa Highlights"],
     idealFor: "Hotels, Resorts, Serviced Apartments & Lodges"
   },
@@ -81,7 +89,7 @@ export const SERVICES: ServiceItem[] = [
     id: "portfolio",
     title: "Portfolio Websites",
     shortDesc: "Sleek, minimalist personal and studio portfolios designed to showcase creative work, attract high-paying clients, and stand out.",
-    image: "/assets/images/service_school_portfolio_1793721011206.jpg",
+    image: portfolioMockup,
     features: ["Case Study Grid & Image Lightbox", "Skills, Bio & Credibility Showcase", "Quick Contact & Direct Booking"],
     idealFor: "Photographers, Designers, Developers & Freelancers"
   }
@@ -95,7 +103,7 @@ export const PROJECTS: ProjectItem[] = [
     isConcept: true,
     typeLabel: "Concept Project",
     summary: "High-end corporate website with modern dark aesthetic, service showcases, and corporate lead capture.",
-    image: "/assets/images/lockvex_hero_mockup_1793721008452.jpg",
+    image: heroMockup,
     features: [
       "Executive dark aesthetic with subtle gold highlights",
       "Interactive enterprise service catalog",
@@ -113,7 +121,7 @@ export const PROJECTS: ProjectItem[] = [
     isConcept: true,
     typeLabel: "Concept Project",
     summary: "Minimalist luxury retail showcase with clean typography, product cards, and instant purchase inquiry.",
-    image: "/assets/images/service_ecommerce_mockup_1793721010104.jpg",
+    image: ecommerceMockup,
     features: [
       "Clean product grid with hover micro-interactions",
       "Curated luxury essentials collection",
@@ -131,7 +139,7 @@ export const PROJECTS: ProjectItem[] = [
     isConcept: true,
     typeLabel: "Concept Project",
     summary: "Atmospheric culinary website with digital dining menu, chef specialties, and WhatsApp table booking.",
-    image: "/assets/images/service_restaurant_mockup_1793721010092.jpg",
+    image: restaurantMockup,
     features: [
       "Elegant interactive food and drink menu",
       "1-Click WhatsApp table reservation system",
@@ -149,7 +157,7 @@ export const PROJECTS: ProjectItem[] = [
     isConcept: true,
     typeLabel: "Concept Project",
     summary: "Contemporary architectural property platform featuring luxury estates, specifications, and instant tour booking.",
-    image: "/assets/images/service_realestate_mockup_1793721010614.jpg",
+    image: realestateMockup,
     features: [
       "Architectural estate photography showcase",
       "Interactive floor plans and property specifications",
@@ -167,7 +175,7 @@ export const PROJECTS: ProjectItem[] = [
     isConcept: true,
     typeLabel: "Concept Project",
     summary: "Prestigious educational academy portal featuring courses, admissions guidance, and student achievements.",
-    image: "/assets/images/service_school_portfolio_1793721011206.jpg",
+    image: schoolMockup,
     features: [
       "Comprehensive course catalog & curriculum overview",
       "Transparent admission requirements and tuition fee guides",
@@ -184,8 +192,8 @@ export const PROJECTS: ProjectItem[] = [
     category: "Hotel Websites",
     isConcept: true,
     typeLabel: "Concept Project",
-    summary: "Boutique hotel experience featuring suite galleries, concierge services, and rapid guest reservations.",
-    image: "/assets/images/service_restaurant_mockup_1793721010092.jpg",
+    summary: "Boutique hotel experience featuring suite galleries, oceanfront infinity pools, and rapid guest reservations.",
+    image: hotelMockup,
     features: [
       "Luxury suites virtual gallery and amenities overview",
       "Concierge and airport pickup inquiry via WhatsApp",
@@ -198,12 +206,12 @@ export const PROJECTS: ProjectItem[] = [
   },
   {
     id: "synergy-creative",
-    title: "Synergy Creative Agency",
+    title: "Nexus Creative Agency",
     category: "Portfolio Websites",
     isConcept: true,
     typeLabel: "Concept Project",
     summary: "Minimalist bold portfolio celebrating digital design projects, case studies, and creative direction.",
-    image: "/src/assets/images/service_school_portfolio_1793721011206.jpg",
+    image: portfolioMockup,
     features: [
       "Bento box case study layout with visual focus",
       "Service capabilities and tech stack breakdown",

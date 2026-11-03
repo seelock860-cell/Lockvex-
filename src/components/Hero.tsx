@@ -1,5 +1,6 @@
 import { ArrowDownRight, MessageSquare, Sparkles, CheckCircle2 } from 'lucide-react';
 import { createWhatsAppLink, WHATSAPP_DISPLAY_NUMBER } from '../data/portfolioData';
+import founderHero from '../assets/images/lockvex_founder_hero.png';
 
 export default function Hero() {
   return (
@@ -90,11 +91,16 @@ export default function Hero() {
             <div className="relative w-full max-w-sm lg:max-w-md aspect-[3/4] rounded-2xl lg:rounded-3xl overflow-hidden border-2 border-neutral-800 bg-neutral-950 p-1 sm:p-1.5 shadow-2xl group transition-all duration-300 hover:border-amber-400/70">
               <div className="relative w-full h-full rounded-xl lg:rounded-2xl overflow-hidden bg-neutral-900">
                 <img
-                  src="/assets/images/lockvex_founder_hero.png"
+                  src={founderHero}
                   alt="LOCKVEX Founder & Lead Web Developer"
                   className="w-full h-full object-cover object-top transform group-hover:scale-[1.03] transition-transform duration-500"
                   loading="eager"
-                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src !== '/assets/images/lockvex_founder_hero.png') {
+                      target.src = '/assets/images/lockvex_founder_hero.png';
+                    }
+                  }}
                 />
 
                 {/* Scrim overlay at the base for typographic legibility */}
